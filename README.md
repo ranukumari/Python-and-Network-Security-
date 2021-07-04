@@ -1,17 +1,20 @@
 # Python-and-Network-Security-
 Python and Network Security Project Submission (ShapeAI)
-'''3. Add salting and Iteration to hashes'''
 
-import hashlib #importing library
 
-def main():  #defining main function
 
+    '''Generating hashes of string usning hashlib library'''
+
+    import hashlib #importing library
+
+    def main():  #defining main function
+    
     password ="Ranu_Kumari@" #initializing string
     salt="!123kum#$^"    #intializing salt
     db_password = password+salt   #Salting
     TextEncoding=db_password.encode() 
 
-    '''Hash with MD5'''
+    '''Hash with MD5 (Not Recommended)'''
     print("HASH WITH MD5")
     print("MD5: ",hashlib.md5(TextEncoding).hexdigest())
 
@@ -38,5 +41,4 @@ def main():  #defining main function
     print("BLAKE2b: ",hashlib.blake2b(TextEncoding).hexdigest())  #512-bit BLAKE2 or BLAKE2b
 
     return
-
-main() #calling main function 
+    main() #calling main function 
