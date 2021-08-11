@@ -1,4 +1,4 @@
-# Hash Function using Haslib Library-
+# Hash Function using hashlib Library-
 
 
 
