@@ -1,4 +1,4 @@
-# Python-and-Network-Security-
+# Hash Function using Haslib Library-
 Python and Network Security Project Submission (ShapeAI)
 
 
